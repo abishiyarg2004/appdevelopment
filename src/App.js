@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Navigationbar from './components/Navigationbar';
+import Routing from './Routterfolder/Routing';
 import { BrowserRouter } from 'react-router-dom';
-import Routing from './Routingfolder/Routing.jsx';
+
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Routing></Routing>
+    <div >
+      <Navigationbar></Navigationbar>
+       
+    <Routing></Routing>
     </div>
     </BrowserRouter>
   );
